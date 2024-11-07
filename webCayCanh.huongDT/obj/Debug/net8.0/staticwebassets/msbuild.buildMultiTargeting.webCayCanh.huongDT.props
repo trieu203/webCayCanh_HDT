@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\webCayCanh.huongDT.props" />
+</Project>

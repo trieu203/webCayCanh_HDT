@@ -1,0 +1,36 @@
+﻿@model webCayCanh.huongDT.Data.PhanLoaiSp
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>PhanLoaiSp</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaPhanLoai" />
+            <div class="form-group">
+                <label asp-for="TenPhanLoai" class="control-label"></label>
+                <input asp-for="TenPhanLoai" class="form-control" />
+                <span asp-validation-for="TenPhanLoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MoTaPl" class="control-label"></label>
+                <input asp-for="MoTaPl" class="form-control" />
+                <span asp-validation-for="MoTaPl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
